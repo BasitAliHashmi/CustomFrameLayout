@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:tag="30:20:0:0">
+        <!--width,height,left,top-->
+        <ImageView
+            android:id="@+id/s1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/makeup_1"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:tag="70:40:30:0:p">
+        <!--width,height,left,top-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/s2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/makeup_2"
+                android:tag="p"/>
+
+            <TextView
+                android:id="@+id/lbl_all_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALL PRODUCTS"
+                android:layout_centerInParent="true"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/discover_heading_bg"
+                android:padding="10dp"
+                />
+
+            <TextView
+                android:id="@+id/btn_all_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View All Categories"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:textColor="@color/colorWhite"
+                android:background="@drawable/discover_all_category_lbl_bg"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="20dp"
+                android:visibility="gone"
+                android:alpha="0"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:tag="30:20:0:20">
+        <!--width,height,left,top-->
+
+        <ImageView
+            android:id="@+id/s3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/makeup_3"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l4"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="70:25:0:40">
+        <!--width,height,left,top-->
+        <ImageView
+            android:id="@+id/s4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/makeup_4"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l5"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="30:25:70:40">
+        <!--width,height,left,top-->
+        <ImageView
+            android:id="@+id/s5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/makeup_5"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l6"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="70:35:0:65">
+        <!--width,height,left,top-->
+
+        <ImageView
+            android:id="@+id/s6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/makeup_6"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l7"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:tag="30:35:70:65">
+        <!--width,height,left,top-->
+
+        <ImageView
+            android:id="@+id/s7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/makeup_7"
+            />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btn_all_products"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View All Products"
+            android:layout_centerInParent="true"
+            android:textSize="16dp"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/discover_all_category_lbl_bg"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:visibility="gone"
+            android:alpha="0"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
