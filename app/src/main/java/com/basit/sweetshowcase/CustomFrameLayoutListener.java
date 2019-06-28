@@ -1,4 +1,4 @@
-package com.basit.customframelayout;
+package com.basit.sweetshowcase;
 
 public interface CustomFrameLayoutListener {
 

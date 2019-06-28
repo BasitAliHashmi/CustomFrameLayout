@@ -1,8 +1,7 @@
-package com.basit.customframelayout;
+package com.basit.sweetshowcase;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
-import android.app.Activity;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -191,6 +190,7 @@ public class CustomFrameLayout extends FrameLayout implements GestureDetector.On
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
+
         if (mEnableSliding) {
             // In general, we don't want to intercept touch events. They should be
             // handled by the child view.
@@ -251,11 +251,6 @@ public class CustomFrameLayout extends FrameLayout implements GestureDetector.On
             float deltaX = e2.getX() - mLastMotionX;
             float deltaY = e2.getY() - mLastMotionY;
 
-            Log.e("MLAST Y", String.valueOf(mLastMotionY));
-
-            Log.e("DELTA X", String.valueOf(deltaX));
-            Log.e("DELTA Y", String.valueOf(deltaY));
-
             if (Math.abs(deltaX) > Math.abs(deltaY)) {
                 if (Math.abs(deltaX) > mTouchSlop) {
 
@@ -290,7 +285,6 @@ public class CustomFrameLayout extends FrameLayout implements GestureDetector.On
                     float startHeight = this.getHeight();
 
                     float distanceMeasuredY = Math.abs(scrollingY - startY);
-                    Log.e("DISTANCE Y", String.valueOf(distanceMeasuredY));
 
                     mPosition = 1 - ((distanceMeasuredY / startHeight * 100) / 100);
 

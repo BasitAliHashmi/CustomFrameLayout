@@ -1,16 +1,14 @@
-package com.basit.customframelayout;
+package com.basit.sweetshowcase;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.Animator;
 import android.animation.ValueAnimator;
-import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
@@ -557,7 +555,7 @@ public class MainActivity extends AppCompatActivity implements CustomFrameLayout
 
                 for(int k = 0; k < currentOnScreenViews.size(); k ++){
                     currentOnScreenViews.get(k).setClickable(true);
-                    registerClickEvents(currentOnScreenViews.get(k));
+                    //registerClickEvents(currentOnScreenViews.get(k));
                 }
 
                 tempV1.setTranslationX(0);
